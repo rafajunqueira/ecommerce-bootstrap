@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Cadastro de Clientes</title>
+  <!-- Brianda Pratas Fav icon -->
+  <link rel="icon" href="../img/bp-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container-flex d-flex" style="height: 15vw; width: auto;">
+      <!-- LOGO -->
+      <img src="../img/logo.png" id="logo" class="offset-1 float-left" href="./index.html" alt="Banner Image">
+      <!-- LOGO -->
+      <!-- ADMIN -->
+      <span id="adminIcon" class="secondary-color my-auto offset-7">
+        <!-- ADMIN ICON -->
+        <span class="icon">
+          <svg id="profile-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person"
+            viewBox="0 0 16 16" style="height: 36;width: 36">
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+          </svg>
+        </span>
+        <!-- ADMIN ICON -->
+        <span class="text">Admin</span>
+        <!-- ADMIN -->
+      </span>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar d-flex p-3 mb-5 mt-3 " style="background-color: #fff; width: 100%;">
+    <ul class="navbar-nav navbar-expand-lg p-4 my-auto offset-9">
+      <li class="nav-item">
+        <a class="nav-link mr-5" aria-current="page" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./customer.html">Clientes</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Navbar -->
+
+  <div class="container-flex offset-md-1" id="containerFormCadastroCliente">
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-outline mb-4">
+            <!-- CPF input -->
+            <label class="form-label" for="form1Example1">CPF</label>
+            <input type="cpf" id="form1Example1" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-outline mb-4">
+            <!-- Nome input -->
+            <label class="form-label" for="nome">Nome do Cliente</label>
+            <input type="text" id="nome" class="form-control" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-outline mb-4">
+            <!-- Email input -->
+            <label class="form-label" for="email">E-mail</label>
+            <input type="text" id="email" class="form-control" />
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <!-- Dt. Nasc. input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="dtnasc">Data de Nascimento</label>
+            <input type="text" id="dtnasc" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <!-- CEP input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="cep">CEP</label>
+            <input type="text" id="cep" class="form-control" />
+          </div>
+        </div>
+        <div class="col-md-4 offset-2">
+          <!-- Logradouro input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="logradouro">Logradouro (número) e referência</label>
+            <input type="text" id="logradouro" class="form-control" />
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <!-- Cidade input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="cidade">Cidade</label>
+            <input type="text" id="cidade" class="form-control" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <!-- Endereço input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="endereco">Endereço</label>
+            <input type="text" id="endereco" class="form-control" />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- Bairro input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="bairro">Bairro</label>
+            <input type="text" id="bairro" class="form-control" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+
+          <!-- Telefone input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="telefone">Telefone</label>
+            <input type="text" id="telefone" class="form-control" />
+          </div>
+        </div>
+
+        <div class="col-md-6 my-auto">
+          <!-- Tipo Telefone Checkbox -->
+          <div class="form-check form-check-inline offset-2">
+            <input class="form-check-input " type="checkbox" value="" id="telefoneTipoLigacao" />
+            <label class="form-check-label" for="telefoneTipoLigacao">
+              Ligação
+            </label>
+            <div class="col-sm-6 offset-3">
+              <input class="form-check-input" type="checkbox" value="" id="telefoneTipoWhatsapp" />
+              <label class="form-check-label" for="telefoneTipoWhatsapp">
+                Whatsapp
+              </label>
+            </div>
+            <div class="col-sm-6 offset-1">
+              <input class="form-check-input" type="checkbox" value="" id="telefoneTipoOutro" />
+              <label class="form-check-label" for="telefoneTipoOutro">
+                Outro
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="offset-1">
+        <div class="row">
+          <div class="col-md-2 offset-3">
+            <!-- Cancelar button -->
+            <button type="submit" class="btn btn-primary btn-block">Cancelar</button>
+          </div>
+          <div class="col-md-2">
+            <!-- Cadastrar button -->
+            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+          </div>
+        </div>
+    </form>
+  </div>
+</body>
+<footer>
+  <!-- ADMIN -->
+  <div class="container-flex d-flex offset-10" style="height: 7vw;">
+    <span class="secondary-color my-auto">
+      <!-- ADMIN ICON -->
+      <span class="icon float-right">
+        <img src="../img/instagram-icon.svg" id="instagram" class="img-fluid" href="./index.html" alt="Instagram Icon">
+        <a class="nohover" href="https://instagram.com/bripratas">
+          <span class="text mx-auto offset-7">@bripratas
+        </a>
+      </span>
+    </span>
+    </span>
+  </div>
+</footer>
+
+</html>

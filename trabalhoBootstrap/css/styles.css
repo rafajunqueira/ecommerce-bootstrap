@@ -1,0 +1,129 @@
+html,
+body {
+  background-color: #fffaee;
+  margin: 0;
+  width: 98.7vw;
+  height: auto;
+}
+
+.primary-color {
+  background-color: #fffaee;
+}
+
+.secondary-color {
+  color: #dd7c1e;
+}
+
+nav .navbar {
+  padding: 5vh;
+  background-color: #fffaee;
+}
+
+.banner-img img {
+  width: 100vw;
+}
+
+.product-img img {
+  transition: transform 0.4s ease; /* Animation */
+}
+
+.product-img:not(.nohover):hover img {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#logo:hover,
+#adminIcon:hover {
+  cursor: pointer;
+}
+
+.w-100 {
+  width: 33.3vw;
+  height: 550px;
+  object-fit: cover;
+}
+
+.w-100-detail {
+  width: 32vw;
+  object-fit: cover;
+}
+
+a:not(.nohover):hover,
+a:not(.nohover):focus,
+a:not(.nohover):active {
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+}
+
+a {
+  transition: color 0.1s, background-color 0.1s;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: #000;
+}
+
+a:not(.nohover)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #f296ec;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+a:not(.nohover)s:active::before {
+  background-color: #000;
+}
+a:not(.nohover):hover::before,
+a:not(.nohover):focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+#telefoneTipoLigacao {
+  margin-left: 6.5px;
+}
+
+.frete-color {
+  border: solid #68ccf0 1px;
+}
+
+.frete-icon-svg-color{
+  /* offset-x | offset-y | blur-radius | color */
+  filter: invert(70%) sepia(57%) saturate(482%) hue-rotate(163deg)
+  brightness(97%) contrast(93%);
+}
+
+.btnComprarBackground {
+  background-color: #fff700;
+  border: solid #2424244f 1px;
+}
+
+.fav-icon-svg-color {
+  filter: invert(15%) sepia(51%) saturate(7173%) hue-rotate(356deg)
+    brightness(104%) contrast(118%);
+}
+
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+}
+.svg-icon svg {
+  height: 1em;
+  width: auto;
+}
+
+.svg-icon.svg-baseline svg {
+  top: 0.125em;
+  position: relative;
+}
